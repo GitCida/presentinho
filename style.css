@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 40px 0;
+    font-family: 'Dancing Script', cursive;
+    background: linear-gradient(45deg, #f891a0, #ffd6ec);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+h1 {
+font-size: 40px;
+    color: #ff3385;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(255, 51, 133, 0.2);
+}
+
+.container {
+    background: white;
+    padding: 30px 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+#motivo {
+    font-size: 20px;
+    color: #333;
+    margin: 20px 0;
+    min-height: 80px;
+    line-height: 1.6;
+    background-color: #fff0f5;
+    border-radius: 15px;
+    padding: 15px 20px;
+    box-shadow: inset 0 0 10px rgba(255, 102, 178, 0.1);
+    transition: all 0.5s ease;
+    white-space: pre-wrap;
+    font-family: 'verdana';
+}
+
+button {
+    padding: 12px 24px;
+    background: linear-gradient(to right, #ff66b2, #ff85c1);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(255, 102, 178, 0.3);
+    transition: all 0.3s ease;
+    outline: none;
+    font-family: 'verdana';
+}
+
+button:hover {
+    background: linear-gradient(to right, #e0559e, #ff66b2);
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(255, 102, 178, 0.4);
+}
+
+button:disabled {
+    background-color: #ddd;
+    color: #8d395c;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.mural-caixa {
+    background: white;
+    max-width: 400px;
+    margin: 30px auto 0;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 90%;
+    box-sizing: border-box;
+    animation: fadeIn 1s ease forwards;
+}
+
+.grid-fotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.grid-fotos img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.grid-fotos img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.foto-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.legenda {
+    font-style: italic;
+    color: #8d395c;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: #ffe6f0;
+    padding: 10px 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(255, 102, 178, 0.1);
+    font-family: 'Verdana', sans-serif;
+}
+
+.container, .mural-caixa {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(255, 102, 178, 0.2);
+    text-align: center;
+    max-width: 500px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #ffb3d9;
+    animation: fadeInContainer 0.8s ease-out;
+}
+
+@keyframes fadeInContainer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
